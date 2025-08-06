@@ -11,9 +11,6 @@ CORS(app, origins=["*"])
 
 db.init_app(app)
 
-
-
-
 from models import Task, Comment
 from routes.tasks import tasks_bp
 from routes.comments import comments_bp
